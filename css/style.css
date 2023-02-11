@@ -535,11 +535,12 @@ border-radius: 0 0 4px 4px;
 
 /*==========footer form==========*/
 
-
+.footer-form {
+        margin-left: auto
+}
 
 .form-footer {
-        display: ;
-        padding-left: 70px;
+        display: block;
 }
 
 .text-send {
@@ -568,6 +569,7 @@ border-radius: 0 0 4px 4px;
 }
 
 .button-footer {
+        font-family: inherit;
         display: inline-flex;
         color: var(--mein-background);
         background: var(--button-mein-background);
@@ -608,7 +610,7 @@ border-radius: 0 0 4px 4px;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 408px;
-        height: 584px;
+        padding: 72px 24px 24px 24px;
         background-color: var(--modal);
         border-radius: 4px;
 }
@@ -649,9 +651,6 @@ border-radius: 0 0 4px 4px;
         pointer-events: none;
 }
 
-.contackt-form {
-        padding-top: 72px;
-}
 
 .title-modal {
         font-weight: 500;
@@ -662,9 +661,10 @@ border-radius: 0 0 4px 4px;
 }
 
 .input {
-        width: 360px;
+        width: 100%;
         height: 40px;
-        margin: 4px 24px 8px 24px;
+        margin-top: 4px;
+        margin-bottom: 8px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         transition: border var(--transform-style);
@@ -687,7 +687,7 @@ border-radius: 0 0 4px 4px;
         align-items: center;
         position: absolute;
         top: 45%;
-        left: 43px;
+        left: 19px;
         fill: var(--primary-text-color);
         transform: translate(-50%, -50%);
         transition: fill var(--transform-style);
@@ -705,7 +705,7 @@ border-radius: 0 0 4px 4px;
 .svg-phone {
         position: absolute;
         top: 50%;
-        left: 43px;
+        left: 19px;
         transform: translate(-50%, -50%);
         fill: var(--primary-text-color);
         transition: fill var(--transform-style);
@@ -721,9 +721,10 @@ border-radius: 0 0 4px 4px;
 }
 
 .svg-email {
+        
         position: absolute;
         top: 50%;
-        left: 43px;
+        left: 19px;
         transform: translate(-50%, -50%);
         fill: var(--primary-text-color);
         transition: fill var(--transform-style);
@@ -735,7 +736,6 @@ border-radius: 0 0 4px 4px;
 }
 
 .text-input {
-        margin-left: 24px;
         font-size: 12px;
         line-height: 14px;
         color: var(--hover-customers);
@@ -744,9 +744,10 @@ border-radius: 0 0 4px 4px;
 
 
 .comment {
-        width: 360px;
+        width: 100%;
         height: 120px;
-        margin: 4px 24px 8px 24px;
+        margin-top: 4px;
+        margin-bottom: 8px;
         resize: none;
         font-size: 12px;
         color: rgba(117, 117, 117, 0.5);
@@ -762,6 +763,10 @@ border-radius: 0 0 4px 4px;
         border: 1px solid var(--button-mein-background);
 }
 
+.i-agree-box {
+        display: flex;
+        align-items: center;
+}
 
 .i-agree {
         font-size: 12px;
@@ -778,7 +783,6 @@ border-radius: 0 0 4px 4px;
 
 .svg-agree {
         display: inline-block;
-        margin-left: 24px;
         border: 1.25px solid var(--primary-text-color);
         border-radius: 2px;
         fill: var(--mein-background);
@@ -808,7 +812,6 @@ border-radius: 0 0 4px 4px;
         width: 169px;
         height: 56px;
         margin-top: 24px;
-        margin-bottom: 24px;
         margin-left: auto;
         margin-right: auto;
         transition: background-color var(--transform-style);
