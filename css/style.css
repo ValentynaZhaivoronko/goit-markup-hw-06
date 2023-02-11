@@ -506,12 +506,14 @@ border-radius: 0 0 4px 4px;
         border-radius: 50%;
         
         margin-top: 16px;
-        margin-right: 16px;
         border: 1px solid var(--footer-social);
         background-color: var(--footer-social);
         width: 40px;
         height: 40px;
-       
+}
+
+.footer-list:not(:last-child) {
+        margin-right: 16px;
 }
 
 
@@ -530,6 +532,60 @@ border-radius: 0 0 4px 4px;
 .footer-list:hover {
         background-color: var(--footer-social-hover);
 }
+
+/*==========footer form==========*/
+
+
+
+.form-footer {
+        display: ;
+        padding-left: 70px;
+}
+
+.text-send {
+        color: var(--mein-background);
+        size: 16px;
+        margin-bottom: 16px;
+}
+
+.input-button {
+        display: inline-flex;
+}
+
+.input-footer {
+        display: inline-flex;
+        width: 264px;
+        height: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: transparent;
+        margin-right: 24px;
+        font-size: 12px;
+        line-height: 2;
+        padding-left: 16px;
+        color: rgba(255, 255, 255, 0.6);
+}
+
+.button-footer {
+        display: inline-flex;
+        color: var(--mein-background);
+        background: var(--button-mein-background);
+        border-color: var(--button-mein-background);
+        border-radius: 4px;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 24px;
+        gap: 14px;
+        transition: background-color var(--transform-style), border-color var(--transform-style);
+}
+
+.button-footer:focus,
+.button-footer:hover {
+        background-color: var(--link-active-text-color);
+        border-color: var(--link-active-text-color);  
+}
+
 
 /*======== /footer======== */
 
@@ -552,8 +608,9 @@ border-radius: 0 0 4px 4px;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 408px;
-        height: 576px;
+        height: 584px;
         background-color: var(--modal);
+        border-radius: 4px;
 }
 
 .modal-close-btn {
@@ -561,8 +618,8 @@ border-radius: 0 0 4px 4px;
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 24px;
+        right: 24px;
         width: 24px;
         height: 24px;
         padding: 0;
@@ -590,6 +647,176 @@ border-radius: 0 0 4px 4px;
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
+}
+
+.contackt-form {
+        padding-top: 72px;
+}
+
+.title-modal {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 14px;
+}
+
+.input {
+        width: 360px;
+        height: 40px;
+        margin: 4px 24px 8px 24px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: border var(--transform-style);
+        padding-left: 38px;
+}
+
+.input:hover,
+.input:focus {
+        outline: none;
+        border: 1px solid var(--button-mein-background);
+}
+
+.input-position-name {
+        position: relative;
+}
+
+.svg-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 45%;
+        left: 43px;
+        fill: var(--primary-text-color);
+        transform: translate(-50%, -50%);
+        transition: fill var(--transform-style);
+}
+
+.input:hover + .svg-name,
+.input:focus + .svg-name {
+        fill: var(--button-mein-background);
+}
+
+.input-position-phone {
+        position: relative;
+}
+
+.svg-phone {
+        position: absolute;
+        top: 50%;
+        left: 43px;
+        transform: translate(-50%, -50%);
+        fill: var(--primary-text-color);
+        transition: fill var(--transform-style);
+}
+
+.input:hover + .svg-phone,
+.input:focus + .svg-phone {
+        fill: var(--button-mein-background);
+}
+
+.input-position-email {
+        position: relative;
+}
+
+.svg-email {
+        position: absolute;
+        top: 50%;
+        left: 43px;
+        transform: translate(-50%, -50%);
+        fill: var(--primary-text-color);
+        transition: fill var(--transform-style);
+}
+
+.input:hover + .svg-email,
+.input:focus + .svg-email {
+        fill: var(--button-mein-background);
+}
+
+.text-input {
+        margin-left: 24px;
+        font-size: 12px;
+        line-height: 14px;
+        color: var(--hover-customers);
+}
+
+
+
+.comment {
+        width: 360px;
+        height: 120px;
+        margin: 4px 24px 8px 24px;
+        resize: none;
+        font-size: 12px;
+        color: rgba(117, 117, 117, 0.5);
+        padding: 8px 16px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: border var(--transform-style);
+}
+
+.comment:hover,
+.comment:focus {
+        outline: none;
+        border: 1px solid var(--button-mein-background);
+}
+
+
+.i-agree {
+        font-size: 12px;
+        line-height: 1.4;
+        letter-spacing: 0.04em;
+        color: #757575;
+        margin-left: 8px;
+}
+
+.checkbox {
+        appearance: none;
+        position: absolute;
+}
+
+.svg-agree {
+        display: inline-block;
+        margin-left: 24px;
+        border: 1.25px solid var(--primary-text-color);
+        border-radius: 2px;
+        fill: var(--mein-background);
+        transition: background-color var(--transform-style), border-color var(--transform-style);
+}
+
+.checkbox:checked + .svg-agree {
+        background-color: var(--link-active-text-color);
+        border-color: var(--link-active-text-color);
+}
+
+.link-modal {
+        font-size: 12px;
+        color: var(--button-mein-background);
+        text-decoration: underline;
+}
+
+.send-modal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--mein-background);
+        background-color: var(--button-mein-background);
+        border-color: var(--button-mein-background);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        width: 169px;
+        height: 56px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        transition: background-color var(--transform-style);
+}
+
+.send-modal:hover,
+.send-modal:focus {
+        background-color: var(--link-active-text-color);
 }
 
 /*======== /modal======== */
